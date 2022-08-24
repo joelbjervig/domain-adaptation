@@ -1,26 +1,16 @@
-# domain-adaptation
-
-Master's Thesis Project "Unsupervised Image Classification Using Domain Adaptation Via the Second Order Statistics"
+# Master's Thesis Project
+## Unsupervised Image Classification Using Domain Adaptation Via the Second Order Statistics
 ![screen](misc/screen.png)
 
 ## Installation
 
 ### Dev
-
-I use python and [pipenv](https://docs.pipenv.org/) as a primary tools for 
-development. See [Pipfile](Pipfile), [Pipfile.lock](Pipfile.lock), 
-[requirements-dev.txt](requirements-dev.txt)(if any) and
-[requirements.txt](requirements.txt) for full specification of 
-platform, python and dependency packages.  
-Basically, to reproduce enviroment, you need to run `pip install -r 
-requirements.txt` with certain [version of python](Pipfile.lock#L15). However, 
-it is recommended to use [virtualenv](https://virtualenv.pypa.io/en/stable/).
+I use python pip virtual environment and conda as a primary tools for 
+development. See [requirements.txt](requirements.txt) for full specification of 
+platform, python and dependency packages. Run `pip install -r 
+requirements.txt` with [virtualenv](https://virtualenv.pypa.io/en/stable/).
 
 ## Usage
-
-We provide [main.py](main.py) script, which implements cli interface.  
-Run `python main.py -h` to get info on that.
-
 
 ### Index
 
