@@ -13,7 +13,9 @@ The shallow CORAL method was implemented in Keras at the begining of the project
 for the deep CORAL model because its low-level accessability. Therefore you will find two folders, a keras folder
 for the shallow CORAL method, and a pytorch folder for the deep CORAL model
 
-## Installation
+### Source Code
+1. Shallow CORAL
+2. Deep CORAL
 
 ### Dev
 I use python pip virtual environment and conda as a primary tools for 
@@ -23,12 +25,6 @@ requirements.txt` with [virtualenv](https://virtualenv.pypa.io/en/stable/).
 
 ## Usage
 
-### Index
-
-You can now preprocess data (look at [this](articlix/index/clean.ipynb)).  
-Then `python main.py --dfpath="data/clean_articles.h5" 
---indexpath="data/index.json" --workers=8 index`.
-
 ### Data
 
 [Where to find prepared data](data/where.txt)
@@ -37,15 +33,6 @@ Then `python main.py --dfpath="data/clean_articles.h5"
 
 [Examples](articlix/search/search.ipynb)
 
-### Web interface
-
-Run `python main.py web_interface`. Then you can find page 
-at localhost on port 8080.
-
-### Evaluation
-
-You will need assessments log file, obtained from server.  
-[DCG](articlix/evaluation/dcg.ipynb)
 
 ## Report
 
