@@ -2,6 +2,17 @@
 ## Unsupervised Image Classification Using Domain Adaptation Via the Second Order Statistics
 ![screen](misc/screen.png)
 
+## Overview
+This master's thesis project was conducted with Scania and Uppsala University during spring/summer of 2022.
+CORAL (COrrelation ALignment) is an unspuervised domain adaptation method which minimizes the domain shift
+by aligning the second order statistics of the source and target deep features. A linear classifier will then
+adapt to the target domain by learning in a supervised manner on the aligned source deep features.
+
+### The deep learning packages
+The shallow CORAL method was implemented in Keras at the begining of the project, but pytorch was later favoured
+for the deep CORAL model because its low-level accessability. Therefore you will find two folders, a keras folder
+for the shallow CORAL method, and a pytorch folder for the deep CORAL model
+
 ## Installation
 
 ### Dev
