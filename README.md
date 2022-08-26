@@ -10,26 +10,6 @@ The shallow CORAL method was implemented in Keras at the begining of the project
 for the deep CORAL model because its low-level accessability. Therefore you will find two folders, a keras folder
 for the shallow CORAL method, and a pytorch folder for the deep CORAL model, with their seperate dependency requirements
 
-
-## Source Code Overview
-1. Shallow CORAL
-    - folder: deep_features
-    - folder: plots
-    - folder: weights
-    - main.py
-    - library.py
-    - coral.py
-    - data_loader.py
-    - losses.py
-    - nn_cifar_10.py
-    - nn_classifier.py
-2. Deep CORAL
-    - .py
-    - .py
-    - .py
-    - .py
-
-
 ## Shallow CORAL
 CORAL (COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptation" by Sun et. al. ([link](https://arxiv.org/pdf/1511.05547.pdf)) is an unspuervised domain adaptation method which minimizes the domain shift
 by aligning the second order statistics of the source features with that of the target features. A linear classifier will then
@@ -39,6 +19,18 @@ adapt to the target domain by learning in a supervised manner on the aligned sou
 See [requirements_sc.txt](requirements_sc.txt) for full specification of 
 platform, python and dependency packages. Run `pip install -r 
 requirements_sc.txt` to install dependencies.
+
+### Source Code shallow CORAL
+- folder: deep_features
+- folder: plots
+- folder: weights
+- main.py
+- library.py
+- coral.py
+- data_loader.py
+- losses.py
+- nn_cifar_10.py
+- nn_classifier.py
 
 ### Usage shallow CORAL
 1) In `main.py` load weights from pretraining on Cifar-10 dataset to the neural network by setting `load_weights = True` in the `train_cifar10` function
@@ -54,11 +46,29 @@ See [requirements_dc.txt](requirements_dc.txt) for full specification of
 platform, python and dependency packages. Run `pip install -r 
 requirements_dc.txt` to install dependencies.
 
+### Source code deep CORAL
+- folder: data
+- folder: models
+- folder: plots
+- folder: train_stats
+- cnn_torch_no_coral.py
+- cnn_torch.py
+- confusion_matrix.py
+- coral.py
+- data_loader_our_data.py
+- deep_coral.py
+- no_deep_coral.py
+- our_utils.py
+- plot_trainstats.py
+- target_accuracy.py
+- test.py
+
 ### Usage Deep CORAL
-1) In the main function of `deep_coral.py`, there are several boolean variables that control what code to 
-2)
-3)
+1) In the main function of `deep_coral.py`, there are several boolean variables that controls which code will be executed:
+    - 
+3) 
 4)
+5)
 
 ## Report
 [Web](http://35.227.117.218/)  
