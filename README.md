@@ -31,7 +31,7 @@ for the shallow CORAL method, and a pytorch folder for the deep CORAL model, wit
 
 
 ## Shallow CORAL
-CORAL (COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptation" by Sun et. al. [link](https://arxiv.org/pdf/1511.05547.pdf) is an unspuervised domain adaptation method which minimizes the domain shift
+CORAL (COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptation" by Sun et. al. ([link](https://arxiv.org/pdf/1511.05547.pdf)) is an unspuervised domain adaptation method which minimizes the domain shift
 by aligning the second order statistics of the source and target deep features. A linear classifier will then
 adapt to the target domain by learning in a supervised manner on the aligned source deep features.
 
@@ -47,7 +47,7 @@ requirements_sc.txt` to install dependencies.
 4) Set `plotting = True` to plot TSNE plots and a confusion matrix.
 
 ## Deep CORAL
-Deep CORAL from "Deep CORAL: Correlation Alignment for Deep Domain Adaptation" by Sun, B. & Saenko, K. [link](https://arxiv.org/pdf/1607.01719.pdf) constructs a joint loss function of the CORAL loss and the classification loss such that a convolutional neural net learns a deep, robust representation of the domain adaptation task.
+Deep CORAL from "Deep CORAL: Correlation Alignment for Deep Domain Adaptation" by Sun, B. & Saenko, K. ([link](https://arxiv.org/pdf/1607.01719.pdf)) constructs a joint loss function of the CORAL loss and the classification loss such that a convolutional neural net learns a deep, robust representation of the domain adaptation task.
 
 ### Required environment Deep CORAL
 See [requirements_dc.txt](requirements_dc.txt) for full specification of 
