@@ -47,9 +47,9 @@ platform, python and dependency packages. Run `pip install -r
 requirements_dc.txt` to install dependencies.
 
 ### Source code deep CORAL
-- folder: data
-- folder: models
-- folder: plots
+- folder: data      , contains Cifar-10
+- folder: models    , weights
+- folder: plots     , plots
 - folder: train_stats
 - cnn_torch_no_coral.py
 - cnn_torch.py
