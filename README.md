@@ -4,7 +4,7 @@
 
 ## Overview
 This master's thesis project was conducted with Scania and Uppsala University during spring/summer of 2022.
-CORAL (COrrelation ALignment) is an unspuervised domain adaptation method which minimizes the domain shift
+CORAL (COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptation" by Sun et.al. [link] (https://arxiv.org/pdf/1511.05547.pdf) is an unspuervised domain adaptation method which minimizes the domain shift
 by aligning the second order statistics of the source and target deep features. A linear classifier will then
 adapt to the target domain by learning in a supervised manner on the aligned source deep features.
 
