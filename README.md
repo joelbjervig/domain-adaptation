@@ -55,7 +55,7 @@ platform, python and dependency packages. Run `pip install -r
 requirements_dc.txt` to install dependencies.
 
 ### Usage Deep CORAL
-1)
+1) In the main function of `deep_coral.py`, there are several boolean variables that control what code to 
 2)
 3)
 4)
