@@ -23,10 +23,10 @@ requirements.txt` to install dependencies.
 2. Deep CORAL
 
 ## Usage shallow CORAL
-1) In `main.py` load pretrained weights to the neural network by setting `load_weights = True` in the `train_cifar10` function
-2) Train the linear classifier or load weights to the classifier by either setting `load_weights = False` or `load_weights = True` in the `shallow_CORAL` function.
-
-
+1) In `main.py` load weights from pretraining on Cifar-10 dataset to the neural network by setting `load_weights = True` in the `train_cifar10` function
+2) Setting `do_CORAL = True` will align the camera deep features extracted from the last layer of the CNN in `train_cifar10`. Train the linear classifier or load weights to the classifier by either setting `load_weights = False` or `load_weights = True` in the `shallow_CORAL` function. 
+3) Check the main function to check that the code both functions will be executed
+4) Set `plotting = True` to plot TSNE plots and a confusion matrix.
 ## Report
 
 [Web](http://35.227.117.218/)  
