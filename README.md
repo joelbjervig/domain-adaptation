@@ -13,25 +13,18 @@ The shallow CORAL method was implemented in Keras at the begining of the project
 for the deep CORAL model because its low-level accessability. Therefore you will find two folders, a keras folder
 for the shallow CORAL method, and a pytorch folder for the deep CORAL model
 
+### Required environment
+See [requirements.txt](requirements.txt) for full specification of 
+platform, python and dependency packages. Run `pip install -r 
+requirements.txt` to install dependencies.
+
 ### Source Code
 1. Shallow CORAL
 2. Deep CORAL
 
-### Dev
-I use python pip virtual environment and conda as a primary tools for 
-development. See [requirements.txt](requirements.txt) for full specification of 
-platform, python and dependency packages. Run `pip install -r 
-requirements.txt` with [virtualenv](https://virtualenv.pypa.io/en/stable/).
-
-## Usage
-
-### Data
-
-[Where to find prepared data](data/where.txt)
-
-### Search
-
-[Examples](articlix/search/search.ipynb)
+## Usage shallow CORAL
+1) In `main.py` load pretrained weights to the neural network by setting `load_weights = True` in the `train_cifar10` function
+2) Train the linear classifier or load weights to the classifier by either setting `load_weights = False` or `load_weights = True` in the `shallow_CORAL` function.
 
 
 ## Report
