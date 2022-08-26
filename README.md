@@ -8,14 +8,10 @@ This Master's thesis project was conducted at Scania and Uppsala University duri
 ## The deep learning packages
 The shallow CORAL method was implemented in Keras at the begining of the project, but pytorch was later favoured
 for the deep CORAL model because its low-level accessability. Therefore you will find two folders, a keras folder
-for the shallow CORAL method, and a pytorch folder for the deep CORAL model
+for the shallow CORAL method, and a pytorch folder for the deep CORAL model, with their seperate dependency requirements
 
-## Required environment
-See [requirements.txt](requirements.txt) for full specification of 
-platform, python and dependency packages. Run `pip install -r 
-requirements.txt` to install dependencies.
 
-## Source Code
+## Source Code Overview
 1. Shallow CORAL
     - folder: deep_features
     - folder: plots
@@ -39,6 +35,11 @@ CORAL (COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptati
 by aligning the second order statistics of the source and target deep features. A linear classifier will then
 adapt to the target domain by learning in a supervised manner on the aligned source deep features.
 
+### Required environment shallow CORAL
+See [requirements_sc.txt](requirements_sc.txt) for full specification of 
+platform, python and dependency packages. Run `pip install -r 
+requirements_sc.txt` to install dependencies.
+
 ### Usage shallow CORAL
 1) In `main.py` load weights from pretraining on Cifar-10 dataset to the neural network by setting `load_weights = True` in the `train_cifar10` function
 2) Setting `do_CORAL = True` will align the camera deep features extracted from the last layer of the CNN in `train_cifar10`. Train the linear classifier or load weights to the classifier by either setting `load_weights = False` or `load_weights = True` in the `shallow_CORAL` function. 
@@ -47,6 +48,11 @@ adapt to the target domain by learning in a supervised manner on the aligned sou
 
 ## Deep CORAL
 Deep CORAL from "Deep CORAL: Correlation Alignment for Deep Domain Adaptation" by Sun, B. & Saenko, K. [link](https://arxiv.org/pdf/1607.01719.pdf) constructs a joint loss function of the CORAL loss and the classification loss such that a convolutional neural net learns a deep, robust representation of the domain adaptation task.
+
+### Required environment Deep CORAL
+See [requirements_dc.txt](requirements_dc.txt) for full specification of 
+platform, python and dependency packages. Run `pip install -r 
+requirements_dc.txt` to install dependencies.
 
 ### Usage Deep CORAL
 1)
