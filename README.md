@@ -32,7 +32,7 @@ for the shallow CORAL method, and a pytorch folder for the deep CORAL model, wit
 
 ## Shallow CORAL
 CORAL (COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptation" by Sun et. al. ([link](https://arxiv.org/pdf/1511.05547.pdf)) is an unspuervised domain adaptation method which minimizes the domain shift
-by aligning the second order statistics of the source and target deep features. A linear classifier will then
+by aligning the second order statistics of the source features with that of the target features. A linear classifier will then
 adapt to the target domain by learning in a supervised manner on the aligned source deep features.
 
 ### Required environment shallow CORAL
