@@ -34,10 +34,11 @@ requirements_sc.txt` to install dependencies.
     - `nn_classifier.py` __ linear classifier model
 
 ### Usage shallow CORAL
-1) In `main.py` load weights from pretraining on Cifar-10 dataset to the neural network by setting `load_weights = True` in the `train_cifar10` function
-2) Setting `do_CORAL = True` will align the camera deep features extracted from the last layer of the CNN in `train_cifar10`. Train the linear classifier or load weights to the classifier by either setting `load_weights = False` or `load_weights = True` in the `shallow_CORAL` function. 
-3) Check the main function to check that the code both functions will be executed
-4) Set `plotting = True` to plot TSNE plots and a confusion matrix.
+1) In `main.py` there are boolean vaiables that control which code to be executed load weights from pretraining on Cifar-10 dataset to the neural network by setting `load_weights = True` in the `train_cifar10` function.
+2) 
+3) Setting `do_CORAL = True` will align the camera deep features extracted from the last layer of the CNN in `train_cifar10`. Train the linear classifier or load weights to the classifier by either setting `load_weights = False` or `load_weights = True` in the `shallow_CORAL` function.
+4) Check the main function to check that the code both functions will be executed.
+5) Set `plotting = True` to plot TSNE plots and a confusion matrix.
 
 ## Deep CORAL
 Deep CORAL from "Deep CORAL: Correlation Alignment for Deep Domain Adaptation" by Sun, B. & Saenko, K. ([link](https://arxiv.org/pdf/1607.01719.pdf)) constructs a joint loss function of the CORAL loss and the classification loss such that a convolutional neural net learns a deep, robust representation of the domain adaptation task.
@@ -46,7 +47,7 @@ Deep CORAL from "Deep CORAL: Correlation Alignment for Deep Domain Adaptation" b
 See [requirements_dc.txt](requirements_dc.txt) for full specification of 
 platform, python and dependency packages. Run `pip install -r 
 requirements_dc.txt` to install dependencies.
->hey
+
 ### Source code deep CORAL
 - folders
     - `data` __________ containing the Cifar-10 dataset
@@ -59,7 +60,7 @@ requirements_dc.txt` to install dependencies.
     - `confusion_matrix.py` ______ creates and plots a confusion matrix
     - `coral.py` ___________________ computes the CORAL loss
     - `data_loader_our_data.py` __ loads the Cifar-10, camera, and LiDAR data
-    - `deep_coral.py` _____________ main script to train a DA model from `cnn_torch.py`, to perform hyperparameter tuning of lambda in joint loss function
+    - `deep_coral.py` _____________ main script to train a DA model from `cnn_torch.py`, and to perform hyperparameter tuning of lambda
     - `no_deep_coral.py` __________ main script for supervised training of neural net model from `cnn_torch_no_coral.py` on camera data
     - `our_utils.py` _______________ create and preprocess camera and LiDAR datasets
     - `plot_trainstats.py` ________ a range of code snippets that plots training metrics and results from the hyperparameter tuning
@@ -67,7 +68,7 @@ requirements_dc.txt` to install dependencies.
     - `plot_dataset_images.py` ____ creates and plots a collage of ten images per class, in one image.
 
 ### Usage Deep CORAL
-1) In the main function of `deep_coral.py`, there are several boolean variables that controls which code will be executed
+1) In the main function of `deep_coral.py`, there are several boolean variables that controls which code will be executed.
     - `hparamtuning` __ hyperparameter tuning on lambda
     - `train_model` ___ train model from `cnn_torch.py` with selected hyperparameter lambda
     - `load_model` ____ load model parameters from previous training session
