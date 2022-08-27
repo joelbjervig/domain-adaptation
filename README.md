@@ -80,13 +80,8 @@ requirements_dc.txt` to install dependencies.
     - `train_model` __ supervised training of the model from `cnn_torch_no_coral.py` on camera dataset
     - `load_model`____ loads model parameter from a previous training session
     - `histplot`______ plots training history
-6)
 
 ## Report
 [Web](http://35.227.117.218/)  
 [Slides](https://docs.google.com/presentation/d/e/2PACX-1vT5Qs8ly5csvfrqpafVQ4H0pQTr0U1S1XYF1gudEBVSxXaMwgUgVN4zEBDhO11j3d2Td7VmJ_PK6VGJ/pub?start=false&loop=false&delayms=3000)  
 [Report](misc/articlix-final-report.pdf)
-
-## License
-
-[MIT](LICENSE)
