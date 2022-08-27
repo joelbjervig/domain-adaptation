@@ -1,19 +1,14 @@
 # Master's Thesis Project
-### Unsupervised Image Classification Using Domain Adaptation Via the Second Order Statistics
-![screen](misc/screen.png)
+### Image Classification Using Unsupervised Domain Adaptation Via the Second Order Statistics
 
 ## Overview
-This Master's thesis project was conducted at Scania and Uppsala University during spring/summer -22.
+This Master's thesis project was conducted at Scania and Uppsala University under the supervision of Arash Owrang, during spring/summer -22.
 
-## The deep learning packages
-The shallow CORAL method was implemented in Keras at the begining of the project, but pytorch was later favoured
-for the deep CORAL model because its low-level accessability. Therefore you will find two folders, a keras folder
-for the shallow CORAL method, and a pytorch folder for the deep CORAL model, with their seperate dependency requirements
+## The deep learning libraries
+The shallow CORAL method was implemented in Keras at the beginning of the project. Later, Pytorch was favored because its low-level accessibility was needed for reimplementing the deep CORAL model. Therefore, there is a Keras folder for the shallow CORAL method, and a PyTorch folder for the deep CORAL model, with their separate dependency requirement
 
 ## Shallow CORAL
-CORAL (COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptation" by Sun et. al. ([link](https://arxiv.org/pdf/1511.05547.pdf)) is an unspuervised domain adaptation method which minimizes the domain shift
-by aligning the second order statistics of the source features with that of the target features. A linear classifier will then
-adapt to the target domain by learning in a supervised manner on the aligned source deep features.
+CORAL COrrelation ALignment) from "Return of Frustratingly Easy Domain Adaptation" by Sun et. al. ([link](https://arxiv.org/pdf/1511.05547.pdf)) is an unsupervised domain adaptation method that minimizes the domain shift by aligning the second-order statistics of the source features with that of the target features. A linear classifier will then adapt to the target domain by learning in a supervised manner on the aligned source deep features.
 
 ### Required environment shallow CORAL
 See [requirements_sc.txt](requirements_sc.txt) for full specification of 
@@ -81,7 +76,6 @@ requirements_dc.txt` to install dependencies.
     - `load_model`____ loads model parameter from a previous training session
     - `histplot`______ plots training history
 
-## Report
-[Web](http://35.227.117.218/)  
-[Slides](https://docs.google.com/presentation/d/e/2PACX-1vT5Qs8ly5csvfrqpafVQ4H0pQTr0U1S1XYF1gudEBVSxXaMwgUgVN4zEBDhO11j3d2Td7VmJ_PK6VGJ/pub?start=false&loop=false&delayms=3000)  
+## Report 
+[Slides](https://docs.google.com/presentation/u/0/d/1EWsjkguHm8hfzRbT7wH8fiDLtPQOblYA/edit?usp=slides_home&ths=true&rtpof=true)  
 [Report](misc/articlix-final-report.pdf)
