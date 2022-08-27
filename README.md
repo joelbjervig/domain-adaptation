@@ -59,8 +59,8 @@ requirements_dc.txt` to install dependencies.
     - `confusion_matrix.py` ______ creates and plots a confusion matrix
     - `coral.py` ___________________ computes the CORAL loss
     - `data_loader_our_data.py` __ loads the Cifar-10, camera, and LiDAR data
-    - `deep_coral.py` _____________ main script to train a DA model, to perform hyperparameter tuning of lambda in jpint loss function
-    - `no_deep_coral.py` __________ main script for supervised training of neural net model on camera data. i.e. finetuning.
+    - `deep_coral.py` _____________ main script to train a DA model from `cnn_torch.py`, to perform hyperparameter tuning of lambda in joint loss function
+    - `no_deep_coral.py` __________ main script for supervised training of neural net model from `cnn_torch_no_coral.py` on camera data
     - `our_utils.py` _______________ create and preprocess camera and LiDAR datasets
     - `plot_trainstats.py` ________ a range of code snippets that plots training metrics and results from the hyperparameter tuning
     - `target_accuracy.py` ________ computes classification accuracy of a model on the LiDAR test data
@@ -68,13 +68,18 @@ requirements_dc.txt` to install dependencies.
 
 ### Usage Deep CORAL
 1) In the main function of `deep_coral.py`, there are several boolean variables that controls which code will be executed
-    - sd
-    - sf
-    - sg
-    - 
-3) 
-4)
-5)
+    - `hparamtuning` __ hyperparameter tuning on lambda
+    - `train_model` ___ train model from `cnn_torch.py` with selected hyperparameter lambda
+    - `load_model` ____ load model parameters from previous training session
+    - `eval_test` _____ evaluate a model on test data
+    - `tsneplot` ______ plots TNSE figures
+    - `conf_matrix` ___ plots confusion matrix
+3) The script `no_deep_coral.py`, trains a model in a supervised manner to finetune the pretrained model on the camera dataset.
+4) In the main function of `no_deep_coral.py`, there are three booleans variables that controls which code will be executed.
+    - `train_model` __ supervised training of the model from `cnn_torch_no_coral.py` on camera dataset
+    - `load_model`____ loads model parameter from a previous training session
+    - `histplot`______ plots training history
+6)
 
 ## Report
 [Web](http://35.227.117.218/)  
