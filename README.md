@@ -2,7 +2,7 @@
 ## Image Classification Using Usupervised Domain Adaptation Via the Second Order Statistics
 
 ## Overview
-This Master's thesis project was conducted at Scania and Uppsala University under the supervision of Arash Owrang, during spring/summer -22.
+This Master's thesis project was conducted at Scania and Uppsala University during the spring/summer of 2022.
 
 ## The deep learning libraries
 The shallow CORAL method was implemented in Keras at the beginning of the project. Later, Pytorch was favored because its low-level accessibility was needed for reimplementing the deep CORAL model. Therefore, there is a Keras folder for the shallow CORAL method, and a PyTorch folder for the deep CORAL model, with their separate dependency requirement
