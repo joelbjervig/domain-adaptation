@@ -77,5 +77,5 @@ requirements_dc.txt` to install dependencies.
     - `histplot`______ plots training history
 
 ## Report 
-[Slides](https://docs.google.com/presentation/u/0/d/1EWsjkguHm8hfzRbT7wH8fiDLtPQOblYA/edit?usp=slides_home&ths=true&rtpof=true)  
+[Slides](Final presentation.pptx)  
 [Report](thesis_paper.pdf)
