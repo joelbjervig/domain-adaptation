@@ -1,5 +1,5 @@
 # Master's Thesis Project
-### Image Classification Using Unsupervised Domain Adaptation Via the Second Order Statistics
+## Image Classification Using Usupervised Domain Adaptation Via the Second Order Statistics
 
 ## Overview
 This Master's thesis project was conducted at Scania and Uppsala University under the supervision of Arash Owrang, during spring/summer -22.
